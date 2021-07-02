@@ -221,3 +221,21 @@ p {
 #enc-out {
     margin-top: 1%;
 }
+
+/* meadia query */
+@media screen and (max-width: 412px) {
+    .utility {
+        width: 80vw;
+    }
+    .util-container {
+        width: 100%;
+    }
+    
+    .output-container {
+        margin-top: 30%;
+    }
+
+    .footer {
+        margin-top: 27%;
+    }
+}
