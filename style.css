@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+@font-face {
+    font-family: "tempest";
+    src: url(./font/TempestApache-a3OJ.otf) format("opentype");
+}
+
+.container {
+    position: absolute;
+    opacity: 1.0;
+}
+
+body {
+    background: black;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+canvas {
+    display: block;
+}
+
+.heading-con {
+    position: relative;
+    width: 100vw;
+    height: 15vh;
+    background-color: rgba(117, 117, 117, 0.103);
+    backdrop-filter: blur(5px);
+    margin: auto;
+    display: grid;
+    place-content: center;
+    color: white;
+    border-radius: 10px;
+}
+
+span {
+    color: yellowgreen;
+}
+
+p {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.heading {
+    text-align: center;
+    font-size: 250%;
+    font-family: "tempest";
+    letter-spacing: 0.3rem;
+    color: white;
+    margin-bottom: 2%;
+    filter: drop-shadow(1px 1px 5px rgba(0,0,0,1.0));
+}
+
+/* utility part */
+.utility {
+    width: 60vw;
+    background-color: rgba(117, 117, 117, 0.103);
+    backdrop-filter: blur(5px);
+    margin: auto;
+    margin-top: 4%;
+    padding: 3%;
+    display: grid;
+    place-content: center;
+}
+
+.top-btn-holder {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 3%;
+}
+
+.toggle-btn {
+    padding: 2%;
+    border-style: none;
+    background: transparent;
+    font-family: 'Quicksand', sans-serif;
+    font-size: larger;
+    cursor: pointer;
+}
+
+.active {
+    border-bottom: rgb(0, 255, 157) 2px solid;
+}
+
+.util-container {
+    height: 50vh;
+    width: 50vw;
+}
+
+.form-container {
+    height: 20%;
+    display: grid;
+    place-items: center;
+}
+
+.enc {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.decr {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    margin-bottom: 70%;
+}
+.uinput {
+    padding: 2%;
+    width: 70%;
+    background: transparent;
+    outline: none;
+    border-style: none;
+    border-bottom: yellowgreen 2px solid;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#dec-btn,#enc-btn {
+    padding: 2% 5%;
+    outline: none;
+    background: transparent;
+    border-style: none;
+    background-color: rgba(117, 117, 117, 0.103);
+    backdrop-filter: blur(50px);
+    font-family: 'Quicksand',sans-serif;
+    transition: 0.3s ease-in-out;
+}
+
+#dec-btn:hover {
+    cursor: pointer;
+    background-color: rgba(0, 225, 255, 0.185);
+    backdrop-filter: blur(50px);
+    
+}
+
+#dec-btn:active {
+    color: #00ff00;
+    background-color: rgba(78, 78, 78, 0.103);
+    backdrop-filter: blur(50px);
+
+}
+
+#enc-btn:hover {
+    cursor: pointer;
+    background-color: rgba(0, 225, 255, 0.185);
+    backdrop-filter: blur(50px);
+    
+}
+
+#enc-btn:active {
+    color: #00ff00;
+    background-color: rgba(78, 78, 78, 0.103);
+    backdrop-filter: blur(50px);
+
+}
+
+.key-container {
+    margin-top: 4%;
+    display: grid;
+    place-items: center;
+}
+
+.util-btn {
+    padding: 2% 5%;
+    outline: none;
+    background: transparent;
+    border-style: none;
+    background-color: rgba(117, 117, 117, 0.103);
+    backdrop-filter: blur(50px);
+    font-family: 'Quicksand',sans-serif;
+    transition: 0.5s ease-in-out;
+    margin-bottom: 2%;
+}
+
+.util-btn:hover {
+    cursor: pointer;
+    background-color: rgba(51, 88, 255, 0.226);
+    backdrop-filter: blur(50px);
+}
+
+.util-btn-dec {
+    margin-top: 3%;
+}
+
+.key-holder {
+    padding: 2%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(2px);
+    width: 100%;
+}
+
+#caution {
+    font-size: 70%;
+}
+
+.output-container {
+    margin-top: 3%;
+    padding: 2%;
+    background-color: rgba(0, 7, 0, 0.185);
+    backdrop-filter: blur(2px);
+    word-wrap: break-word;
+}
+
+.footer{
+
+    margin-top: 2%;
+    padding: 0.5%;
+    text-align: center;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(2px);
+    font-size: 60%;
+    font-family: 'Quicksand';
+}
+
+#enc-out {
+    margin-top: 1%;
+}
