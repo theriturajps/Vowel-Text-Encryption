@@ -233,6 +233,7 @@ p {
     
     .output-container {
         margin-top: 30%;
+        word-wrap: break-word;
     }
 
     .footer {
