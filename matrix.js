@@ -11,7 +11,7 @@ window.addEventListener('resize', function(event){
 });
 
 //bengali characters - taken from the unicode charset
-var bengali = "মুড়ো হয় বুড়ো গাছ হাত গোন ভাত পাঁচ দিক পাও ঠিক ঠিক জবাবে। ফাল্গুন তাল জোড় তার মাঝে ভুঁই ফোঁড় সন্ধানে ধন্দায় নবাবে।";
+var bengali = "10101010101010101010101010101010101010101010101010101010101";
 //converting the string into an array of single characters
 bengali = bengali.split("");
 
