@@ -1,71 +1,69 @@
+/* Remove the following line from the existing CSS */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
     color: white;
 }
 
-@font-face {
-    font-family: "tempest";
-    src: url(./font/TempestApache-a3OJ.otf) format("opentype");
-}
-
-.container {
-    position: absolute;
-    opacity: 1.0;
+/* Add the following CSS at the beginning */
+html {
+    font-size: 16px;
 }
 
 body {
-    background: black;
-    height: 100%;
-    width: 100vw;
-    overflow-x: hidden;
-}
-canvas {
-    display: block;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
 }
 
+/* Add the following styles to the .container class */
+.container {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
+    opacity: 1;
+}
+
+/* Add the following styles to the .heading-con class */
 .heading-con {
     position: relative;
-    width: 100vw;
+    width: 100%;
     height: 15vh;
     background-color: rgba(117, 117, 117, 0.103);
     backdrop-filter: blur(5px);
     margin: auto;
-    display: grid;
-    place-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: white;
     border-radius: 10px;
 }
 
-span {
-    color: yellowgreen;
-}
-
-p {
-    font-family: 'Quicksand', sans-serif;
-}
-
 .heading {
     text-align: center;
-    font-size: 250%;
-    font-family: "tempest";
+    font-size: 2rem;
+    font-family: "tempest", sans-serif;
     letter-spacing: 0.3rem;
-    color: white;
     margin-bottom: 2%;
-    filter: drop-shadow(1px 1px 5px rgba(0,0,0,1.0));
+    filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 1.0));
 }
 
-/* utility part */
+/* Add the following styles to the .utility class */
 .utility {
-    width: 60vw;
+    width: 100%;
+    max-width: 600px;
     background-color: rgba(117, 117, 117, 0.103);
     backdrop-filter: blur(5px);
     margin: auto;
     margin-top: 4%;
     padding: 3%;
-    display: grid;
-    place-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .top-btn-holder {
@@ -77,103 +75,57 @@ p {
 
 .toggle-btn {
     padding: 2%;
-    border-style: none;
+    border: none;
     background: transparent;
+    font-size: 1.2rem;
     font-family: 'Quicksand', sans-serif;
-    font-size: larger;
     cursor: pointer;
 }
 
-.active {
-    border-bottom: rgb(0, 255, 157) 2px solid;
-}
-
+/* Add the following styles to the .util-container class */
 .util-container {
-    height: 50vh;
-    width: 50vw;
+    width: 100%;
+    height: auto;
 }
 
+/* Add the following styles to the .form-container class */
 .form-container {
-    height: 20%;
-    display: grid;
-    place-items: center;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
 }
 
-.enc {
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-}
-.decr {
-    width: 100%;
-    display: grid;
-    place-items: center;
-    margin-bottom: 70%;
-}
+/* Add the following styles to the .uinput class */
 .uinput {
     padding: 2%;
-    width: 70%;
+    width: 100%;
     background: transparent;
     outline: none;
-    border-style: none;
-    border-bottom: yellowgreen 2px solid;
+    border: none;
+    border-bottom: 2px solid yellowgreen;
     font-family: 'Quicksand', sans-serif;
 }
 
-#dec-btn,#enc-btn {
-    padding: 2% 5%;
-    outline: none;
-    background: transparent;
-    border-style: none;
-    background-color: rgba(117, 117, 117, 0.103);
-    backdrop-filter: blur(50px);
-    font-family: 'Quicksand',sans-serif;
-    transition: 0.3s ease-in-out;
-}
-
-#dec-btn:hover {
-    cursor: pointer;
-    background-color: rgba(0, 225, 255, 0.185);
-    backdrop-filter: blur(50px);
-    
-}
-
-#dec-btn:active {
-    color: #00ff00;
-    background-color: rgba(78, 78, 78, 0.103);
-    backdrop-filter: blur(50px);
-
-}
-
-#enc-btn:hover {
-    cursor: pointer;
-    background-color: rgba(0, 225, 255, 0.185);
-    backdrop-filter: blur(50px);
-    
-}
-
-#enc-btn:active {
-    color: #00ff00;
-    background-color: rgba(78, 78, 78, 0.103);
-    backdrop-filter: blur(50px);
-
-}
-
+/* Add the following styles to the .key-container class */
 .key-container {
     margin-top: 4%;
-    display: grid;
-    place-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+/* Add the following styles to the .util-btn class */
 .util-btn {
     padding: 2% 5%;
     outline: none;
     background: transparent;
-    border-style: none;
+    border: none;
     background-color: rgba(117, 117, 117, 0.103);
     backdrop-filter: blur(50px);
-    font-family: 'Quicksand',sans-serif;
-    transition: 0.5s ease-in-out;
+    font-family: 'Quicksand', sans-serif;
+    transition: 0.3s ease-in-out;
     margin-bottom: 2%;
 }
 
@@ -183,21 +135,7 @@ p {
     backdrop-filter: blur(50px);
 }
 
-.util-btn-dec {
-    margin-top: 3%;
-}
-
-.key-holder {
-    padding: 2%;
-    background-color: rgba(0, 0, 0, 0.6);
-    backdrop-filter: blur(2px);
-    width: 100%;
-}
-
-#caution {
-    font-size: 70%;
-}
-
+/* Add the following styles to the .output-container class */
 .output-container {
     margin-top: 3%;
     padding: 2%;
@@ -206,37 +144,50 @@ p {
     word-wrap: break-word;
 }
 
-.footer{
-
+/* Add the following styles to the .footer class */
+.footer {
     margin-top: 2%;
     padding: 0.5%;
     text-align: center;
-    width: 100%;
     background-color: rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(2px);
-    font-size: 60%;
-    font-family: 'Quicksand';
+    font-size: 0.8rem;
+    font-family: 'Quicksand', sans-serif;
 }
 
-#enc-out {
-    margin-top: 1%;
-}
+/* Add the following media query at the end */
+@media screen and (max-width: 768px) {
+    .heading {
+        font-size: 1.5rem;
+    }
 
-/* meadia query */
-@media screen and (max-width: 412px) {
     .utility {
-        width: 80vw;
+        width: 90%;
+        max-width: 400px;
+        margin-top: 6%;
     }
-    .util-container {
-        width: 100%;
-    }
-    
+
     .output-container {
-        margin-top: 30%;
-        word-wrap: break-word;
+        margin-top: 6%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .heading {
+        font-size: 1.2rem;
+    }
+
+    .utility {
+        width: 90%;
+        max-width: 300px;
+        margin-top: 8%;
+    }
+
+    .output-container {
+        margin-top: 8%;
     }
 
     .footer {
-        margin-top: 27%;
+        margin-top: 6%;
     }
 }
