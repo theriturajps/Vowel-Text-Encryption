@@ -170,6 +170,10 @@ form#dec-form {
     gap: 16px;
 }
 
+p#enc-out {
+    word-break: break-word;
+}
+
 /* Media Query for Tablet */
 @media screen and (max-width: 768px) {
     .container {
