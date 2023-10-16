@@ -122,7 +122,8 @@ h1 {
 
 #caution {
     font-size: 70%;
-    color: #999;
+    font-family: 'tempest';
+    color: #00ff39;
 }
 
 .output-container {
