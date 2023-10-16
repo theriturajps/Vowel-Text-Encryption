@@ -10,42 +10,50 @@
 }
 
 body {
-    background: #f0f0f0;
     font-family: 'Quicksand', sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+    background: #f0f0f0;
     margin: 0;
 }
 
 .container {
-    max-width: 600px;
-    background: rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    text-align: center;
+    overflow: hidden;
 }
 
 header {
     background: #007bff;
     color: #fff;
-    padding: 10px 0;
-    border-radius: 10px 10px 0 0;
+    text-align: center;
+    padding: 20px 0;
     font-size: 24px;
-    margin-bottom: 20px;
 }
 
 h1 {
     font-family: 'tempest', sans-serif;
 }
 
+.utility {
+    background: #007bff;
+    color: #fff;
+    padding: 20px;
+}
+
+.top-btn-holder {
+    display: flex;
+    justify-content: space-around;
+}
+
 .toggle-btn {
     padding: 10px 20px;
     border: none;
-    background: #007bff;
+    background: #0056b3;
     color: #fff;
     font-size: 16px;
     cursor: pointer;
@@ -54,7 +62,7 @@ h1 {
 }
 
 .toggle-btn.active {
-    background: #0056b3;
+    background: #007bff;
 }
 
 .util-container {
@@ -128,10 +136,65 @@ h1 {
     display: block;
 }
 
-/* Media Query for Mobile */
-@media screen and (max-width: 412px) {
+/* Media Query for Tablet */
+@media screen and (max-width: 768px) {
     .container {
-        width: 90%;
-        margin: 10px;
+        max-width: 90%;
+    }
+
+    .toggle-btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .form-container {
+        gap: 8px;
+    }
+
+    .uinput {
+        padding: 8px;
+    }
+
+    .util-btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+/* Media Query for Mobile */
+@media screen and (max-width: 480px) {
+    .container {
+        max-width: 95%;
+    }
+
+    header {
+        font-size: 20px;
+    }
+
+    .toggle-btn {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    .utility {
+        padding: 10px;
+    }
+
+    .top-btn-holder {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .toggle-btn.active {
+        background: #007bff;
+    }
+
+    .uinput {
+        padding: 8px;
+    }
+
+    .util-btn {
+        padding: 8px 16px;
+        font-size: 14px;
     }
 }
