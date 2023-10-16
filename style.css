@@ -145,6 +145,7 @@ h1 {
 @media screen and (max-width: 768px) {
     .container {
         max-width: 90%;
+        margin-top: 6em;
     }
 
     .toggle-btn {
