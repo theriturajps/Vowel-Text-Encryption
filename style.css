@@ -108,6 +108,21 @@ h1 {
     background: rgba(51, 88, 255, 0.8);
 }
 
+button#dec-btn {
+    padding: 8px 16px;
+    border: none;
+    background: rgb(74 78 97 / 62%);
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.5s;
+}
+
+button#dec-btn:hover {
+    background: rgba(51, 88, 255, 0.8);
+}
+
 form#enc-form {
     display: flex;
     gap: 10px;
