@@ -170,7 +170,7 @@ form#dec-form {
     gap: 16px;
 }
 
-p#enc-out {
+p#enc-out, p#dec-out {
     word-break: break-word;
 }
 
