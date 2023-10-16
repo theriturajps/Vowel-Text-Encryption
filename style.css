@@ -11,7 +11,7 @@
 }
 
 .container {
-    position: absolute;
+    position: relative;
     opacity: 1.0;
 }
 
