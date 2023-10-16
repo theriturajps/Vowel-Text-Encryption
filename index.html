@@ -2,19 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Proposed algorithm for encryption</title>
+    <title>Proposed Algorithm for Encryption</title>
 </head>
 <body>
     <div class="container">
+        <header>
+            <h1>Encryption and Decryption</h1>
+        </header>
         <section class="utility">
             <div class="top-btn-holder">
-                <button id="encrypt" class="toggle-btn">Encryption</button>
+                <button id="encrypt" class="toggle-btn active">Encryption</button>
                 <button id="decrypt" class="toggle-btn">Decryption</button>
             </div>
             <div class="util-container">
@@ -23,9 +25,8 @@
         </section>
     </div>
 
-
     <!-- block content -->
-    <div id="encr-block" style="display: none;">
+    <div id="encr-block" class="block">
         <div class="form-container">
             <form id="enc-form" class="enc" onsubmit="encrypt(event)">
                 <input type="text" placeholder="Enter your message" class="uinput" id="encr-input" name="encr-input">
@@ -33,16 +34,16 @@
             </form>
         </div>
         <div class="key-container">
-            <button id="generate-key" class="util-btn" onclick="generateKey()">Generate new secret key</button>
+            <button id="generate-key" class="util-btn" onclick="generateKey()">Generate New Secret Key</button>
             <p class="key-holder" id="sec-key"><!--output is expected here--></p>
-            <p id="caution">*please remember the secret key for decryption</p>
+            <p id="caution">*Please remember the secret key for decryption</p>
         </div>
         <div class="output-container">
-            <p><strong><b>Encrypted text:</b></strong> </p>
+            <p><strong><b>Encrypted text:</b></strong></p>
             <p id="enc-out"></p>
         </div>
     </div>
-    <div id="decr-block" style="display: none;">
+    <div id="decr-block" class="block">
         <div class="form-container">
             <form id="dec-form" class="decr" onsubmit="decrypt(event)">
                 <input type="text" placeholder="Enter encrypted text" class="uinput">
@@ -51,13 +52,11 @@
             </form>
         </div>
         <div class="output-container" style="margin-top: 20%;">
-            <p><strong><b>Decrypted text:</b></strong> </p>
+            <p><strong><b>Decrypted text:</b></strong></p>
             <p id="dec-out"></p>
         </div>
     </div>
 
-
     <script type="text/javascript" src="./main.js"></script>
-
 </body>
 </html>
