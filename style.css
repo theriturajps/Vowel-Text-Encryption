@@ -108,7 +108,7 @@ h1 {
 
 form#enc-form {
     display: flex;
-    gap: 25px;
+    gap: 10px;
 }
 
 .key-container {
