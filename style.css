@@ -189,7 +189,7 @@ h1 {
     }
 
     .top-btn-holder {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
     }
 
