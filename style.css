@@ -21,11 +21,11 @@ body {
     gap: 20px;
     max-width: 800px;
     margin: 0 auto;
-    background: #fff; /* White background */
+    background: #fff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+    border-radius: 4px;
     overflow: hidden;
-    padding: 20px; /* Added some spacing */
+    padding: 8px;
 }
 
 header {
