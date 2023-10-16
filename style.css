@@ -179,8 +179,8 @@ h1 {
     }
 
     .toggle-btn {
-        padding: 6px 12px;
-        font-size: 12px;
+        padding: 8px 16px;
+        font-size: 14px;
         margin: 0 5px; /* Added spacing between buttons */
     }
 
